@@ -27,7 +27,7 @@ const Loukura = keyframes`
 `;
 
 export const Container = Styled.div`
-    padding: 30px;
+    padding: 30px 65px;
 `;
 
 export const Titulo = Styled.h1`
