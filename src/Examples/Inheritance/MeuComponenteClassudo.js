@@ -18,7 +18,7 @@ class MeuComponenteClassudo extends React.Component {
       this.setState({
         montarFilho: true,
       })
-    }, 3000);
+    }, 2000);
   }
   avisaQueDesmontou = () => {
     this.setState({
