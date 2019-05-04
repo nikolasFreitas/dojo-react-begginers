@@ -8,10 +8,19 @@ export const Container = Styled.div`
     flex-wrap: wrap;
 `;
 
+export const HeroContainer = Styled.div`
+    display: flex;
+    justify-content: center;
+    margin: 60px auto 0;
+`;
+
 export const Title = Styled.h1`
     text-align: center;
+    margin: 15px auto;
     text-transform: uppercase;
-    color: #d84315;
+    color: ${props => props.color || '#d84315'};
+    padding: 0 15px 5px;
+    border-bottom: 1px solid ${props => props.color || 'transparent'};
 `;
 
 export const HeroName = Styled.p`
@@ -38,11 +47,7 @@ export const CardLike = Styled.div`
 
 `;
 
-export const HeroContainer = Styled.div`
-    display: flex;
-    justify-content: center;
-    margin: auto;
-`;
+
 
 export const HeroBox = Styled.div`
     margin-bottom: 15px;

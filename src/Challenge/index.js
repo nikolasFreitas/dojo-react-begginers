@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SwitchHero, GetHeroName, GetHeroAttribute } from '../helpers/objectHelper';
+import { SwitchHero, GetHeroName, GetHeroAttribute, GetHeroColor } from '../helpers/objectHelper';
 import * as heroeImg from './Icons';
 import * as Styled from './style';
 
@@ -11,12 +11,12 @@ const SeletorDePersonagem = () => {
         evandro: false,
     });
 
-    const name = GetHeroName(participanteEscolhido) || 'Heros';
+    const name = GetHeroName(participanteEscolhido) || 'the Heros!';
     const theClasse = GetHeroAttribute(name);
     
     return (
         <Styled.Container>
-            <Styled.Title>{`${name} ${theClasse}`}!</Styled.Title>
+            <Styled.Title color={GetHeroColor(name)}>{`${name} ${theClasse}`}</Styled.Title>
             <Styled.HeroContainer>
                 <Styled.CardLike>
                     <Styled.HeroBox>
