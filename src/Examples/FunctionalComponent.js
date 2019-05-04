@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MeuComponenteFuncional (props) {
+const MeuComponenteFuncional = () => {
 
   return (
     <div>
